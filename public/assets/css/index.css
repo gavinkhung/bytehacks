@@ -29,3 +29,11 @@ textarea {
 input {
     width: 100%;
 }
+#banner {
+    background: url("../imgs/vectors/banner.svg") no-repeat center center;
+    background-size: cover;
+}
+#who {
+    background: url("../imgs/vectors/who.svg") no-repeat center center;
+    background-size: cover;
+}
