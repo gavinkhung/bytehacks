@@ -1,0 +1,106 @@
+.paper {
+    margin-top: 5;
+    margin-bottom: 5%;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+textarea {
+    resize:none;
+    width: 100%;
+}
+input {
+    width: 100%;
+}
+
+.palette { text-align: center; }
+
+@keyframes palette-animation {
+    0%, 100%, 40% {
+        transform: scale(1);
+    }
+    10% {
+        transform: scale(1.3);
+    }
+}
+
+.palette div {
+    animation: palette-animation 6s infinite ease-in-out;
+    width: 30px;
+    height: 50px;
+    display: inline-block;
+    border-bottom: 7px solid black;
+    will-change: transform;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14),
+                0 3px 1px -2px rgba(0, 0, 0, .2),
+                0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+
+section, article {
+    width: 95%;
+    max-width: 500px;
+    margin: 40px auto;
+}
+
+.demo input[type="text"] {
+    width: calc(50% - 10px);
+    min-width: 165px;
+}
+
+.demo select, article select { width: calc(50% - 10px); }
+
+.demo select { float: right; }
+
+.demo textarea, article textarea {
+    width: 100%;
+    height: 150px;
+    resize: none;
+}
+
+.demo > .paper > label { width: 50%; }
+
+.demo button.blue-button, .demo button.red-button, .demo button.green-button {
+    display: inline-block;
+    margin: 7px;
+}
+
+.demo .switch {
+    margin: 20px;
+    vertical-align: middle;
+}
+
+section.selectable { text-align: justify; }
+
+.checktext-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px;
+}
+
+.blue-color { color: #316FD8; }
+
+.green-color { color: #19A187; }
+
+.red-color { color: #B22525 }
+
+pre {
+    white-space: pre-wrap;
+    color: #B3B3B3;
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+article label {
+    padding: 10px;
+    font-size: 16px;
+}
+
+article .red-button, article .blue-button, article .green-button, article .rounded-button, article button {
+    margin: 20px auto 0;
+    display: block;
+    position: static;
+}
