@@ -5,11 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ByteHacks</title>
 
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
     <link rel="stylesheet" href="public/assets/css/skeuos.css">
     <link rel="stylesheet" href="public/assets/css/index.css">
 </head>
@@ -29,8 +25,6 @@
             <a href="#meet" class="item">Meet</a>
             <a href="#contact" class="item">Contact</a>
         </div>
-
-        <hr>
 
         <!-- Banner -->
         <div id="banner" class="paper">
@@ -271,7 +265,16 @@
         </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
+    <script src="public/assets/js/index.js"></script>
     <script>
+        /*
         var typed = new Typed('#typed', {
           strings: [" Byte Hacks", " Online Hackathon", " Prizes"],
           backSpeed: 10,
@@ -280,20 +283,9 @@
           showCursor: false,
           loop: true
         });
+        */
+        
     </script>
-    <script>
-        // smooth scroll
-        $('.navbar a').on('click', function(e){
-            if(this.hash !== ''){
-                e.preventDefault();
-                const hash = this.hash;
-
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 800);
-            }
-            
-        });
-    </script>
+   
 </body>
 </html>
