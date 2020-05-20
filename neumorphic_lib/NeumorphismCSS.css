@@ -1,0 +1,503 @@
+/*!
+ * NenmorphismCSS v0.1.0 (https://github.com/ERHECY/NenmorphismCSS)
+ * Licensed under GUN GPLv2 (https://github.com/ERHECY/NenmorphismCSS/blob/master/LICENSE)
+ */
+
+
+/* all 全局 */
+
+* {
+    outline: none;
+}
+
+
+/* button  按钮 */
+
+button {
+    cursor: pointer;
+}
+
+.btn {
+    padding: 3px 21px;
+    line-height: 38px;
+    border: none;
+    text-align: center;
+    transition: 0.3s ease;
+    transition-property: box-shadow, transform;
+    font-size: 13.3333px;
+    box-shadow: 12px 12px 16px 0px #d4d4d4, -8px -8px 16px #ffffff;
+}
+
+.btn-sm {
+    padding: 1px 12px;
+    line-height: 30px;
+}
+
+.btn-full {
+    width: 100%;
+}
+
+.btn:hover {
+    box-shadow: 4px 4px 7px 0px #d4d4d4, -4px -4px 10px #ffffff;
+}
+
+.btn-cleary:hover {
+    box-shadow: 12px 12px 16px 0px #d4d4d4, -8px -8px 16px #ffffff;
+}
+
+.btn:focus {
+    box-shadow: 0 0 0 rgba(0, 0, 0, .2), 0 0 0 rgba(255, 255, 255, .8), inset -8px -8px 20px rgb(255 255 255 / 0.31), inset 5px 5px 8px #2c2c2c38;
+}
+
+.btn:disabled {
+    cursor: no-drop;
+}
+
+
+/* btn a 超链接链接 */
+
+.btn-link {
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+/* default button */
+
+.btn-default {
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    /* box-shadow: 5px 5px 14px #cccccc, -5px -5px 14px #ffffff; */
+    color: #000;
+}
+
+.btn-default:hover {
+    background: linear-gradient(145deg, #ffffff, #dadada);
+}
+
+.btn-default:disabled {
+    box-shadow: inset 1px 1px 5px 1px #cccccc;
+    background: linear-gradient(145deg, #ffffff, #ffffff);
+    color: rgb(170, 170, 170);
+}
+
+.btn-default:focus {
+    /* box-shadow: 0px 2px 10px #cccccc, 0px 2px 1px #ffffff; */
+    background: linear-gradient(145deg, #ffffff, #dadada);
+}
+
+
+/* primary button */
+
+.btn-primary {
+    background: linear-gradient(145deg, #4ec8ff, #42a8db);
+    /* box-shadow: 12px 12px 16px 0px #d4d4d4, -8px -8px 16px #ffffff; */
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(145deg, #61bfef, #509fc7);
+}
+
+.btn-primary:disabled {
+    box-shadow: inset 1px 1px 5px 1px #cccccc;
+    background: linear-gradient(145deg, #ffffff, #ffffff);
+    color: rgb(170, 170, 170);
+}
+
+.btn-primary:focus {
+    background: linear-gradient(145deg, #61bfef, #509fc7);
+}
+
+
+/* secondary button */
+
+.btn-secondary {
+    background: linear-gradient(145deg, #b6babd, #999d9f);
+    /* box-shadow: 6px 6px 13px #a2a5a899, -5px -5px 14px #ffffff; */
+    color: #ffffff;
+}
+
+.btn-secondary:hover {
+    background: linear-gradient(145deg, #a6aaac, #8c8f91);
+}
+
+.btn-secondary:disabled {
+    box-shadow: inset 1px 1px 5px 1px #cccccc;
+    background: linear-gradient(145deg, #ffffff, #ffffff);
+    color: rgb(170, 170, 170);
+}
+
+.btn-secondary:focus {
+    /* box-shadow: 0px 2px 10px #a2a5a8; */
+    background: linear-gradient(145deg, #a6aaac, #8c8f91);
+}
+
+
+/* success button */
+
+.btn-success {
+    background: linear-gradient(145deg, #a9ec8c, #8ec776);
+    /* box-shadow: 6px 6px 13px #96d27c99, -5px -5px 14px #ffffff; */
+    color: #ffffff;
+}
+
+.btn-success:hover {
+    background: linear-gradient(145deg, #a1da88, #87b872);
+}
+
+.btn-success:disabled {
+    box-shadow: inset 1px 1px 5px 1px #cccccc;
+    background: linear-gradient(145deg, #ffffff, #ffffff);
+    color: rgb(170, 170, 170);
+}
+
+.btn-success:focus {
+    /* box-shadow: 0px 2px 10px #96d27c; */
+    background: linear-gradient(145deg, #a1da88, #87b872);
+}
+
+
+/* warning button */
+
+.btn-warning {
+    background: linear-gradient(145deg, #e6dc71, #c2b95f);
+    /* box-shadow: 6px 6px 13px #cdc56999, -5px -5px 14px #ffffff; */
+    color: #ffffff;
+}
+
+.btn-warning:hover {
+    background: linear-gradient(145deg, #dad16d, #b8b05c);
+}
+
+.btn-warning:disabled {
+    box-shadow: inset 1px 1px 5px 1px #cccccc;
+    background: linear-gradient(145deg, #ffffff, #ffffff);
+    color: rgb(170, 170, 170);
+}
+
+.btn-warning:focus {
+    /* box-shadow: 0px 2px 10px #cdc569; */
+    background: linear-gradient(145deg, #dad16d, #b8b05c);
+}
+
+
+/* danger button */
+
+.btn-danger {
+    background: linear-gradient(145deg, #b33964, #963054);
+    /* box-shadow: 6px 6px 13px #9f325866, -5px -5px 14px #ffffff; */
+    color: #ffffff;
+}
+
+.btn-danger:hover {
+    background: linear-gradient(145deg, #ad4368, #923957);
+}
+
+.btn-danger:disabled {
+    box-shadow: inset 1px 1px 5px 1px #cccccc;
+    background: linear-gradient(145deg, #ffffff, #ffffff);
+    color: rgb(170, 170, 170);
+}
+
+.btn-danger:focus {
+    /* box-shadow: 0px 2px 10px #9f3258; */
+    background: linear-gradient(145deg, #ad4368, #923957);
+}
+
+
+/* card 卡片 */
+
+
+/* .card {
+    box-shadow: 12px 12px 16px 0px #d4d4d4, -8px -8px 16px #ffffff;
+}
+
+.card-concave {
+    box-shadow: inset 12px 12px 16px 0px #d4d4d4, inset -8px -8px 16px #ffffff;
+} */
+
+.card-body {
+    padding: 15px;
+}
+
+.card-top {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-top-p {
+    text-align: center;
+    padding: 4% 4% 0 4%;
+}
+
+.card-title {
+    margin: 0;
+    color: #668a9a;
+}
+
+.card-body p {
+    margin: 0;
+    color: #668a9a91;
+}
+
+.card-body a {
+    text-decoration: none
+}
+
+
+/* shadow 阴影 */
+
+
+/* 
+.shadow {
+    box-shadow: 8px 8px 16px #d4d4d4, -8px -8px 16px #ffffff;
+} */
+
+.shadow {
+    box-shadow: -6px -5px 10px white, 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.shadow-sm {
+    box-shadow: 1px 1px 2px #cdcbcb, -1px -1px 2px #ffffff;
+}
+
+.shadow-concave {
+    box-shadow: inset 8px 8px 16px #d4d4d4, inset -8px -8px 16px #ffffff;
+}
+
+
+/* border 圆角 */
+
+.border {
+    border-radius: 20px;
+}
+
+.border-t {
+    border-radius: 35px 35px 0px 0px;
+}
+
+.border-b {
+    border-radius: 0px 0px 35px 35px;
+}
+
+.border-sm {
+    border-radius: 10px;
+}
+
+.border-sm-t {
+    border-radius: 10px 10px 0px 0px;
+}
+
+.border-sm-b {
+    border-radius: 0px 0px 10px 10px;
+}
+
+.border-lg {
+    border-radius: 50px;
+}
+
+.border-lg-t {
+    border-radius: 50px 50px 0px 0px;
+}
+
+.border-lg-b {
+    border-radius: 0px 0px 50px 50px;
+}
+
+.border-all {
+    border-radius: 50%;
+}
+
+
+/* divider 分割线 */
+
+hr {
+    margin-bottom: 20px;
+}
+
+.divider {
+    height: 2px;
+    box-shadow: 1px 1px 2px #cdcbcb, -1px -1px 2px #ffffff;
+    border: none;
+}
+
+.divider-sm {
+    width: 100px;
+    margin-inline-start: unset;
+}
+
+
+/* img 图片 */
+
+.img {
+    max-width: 100%;
+}
+
+
+/* form 表单 */
+
+.input {
+    color: #868a9a;
+    text-shadow: 1px 1px 0 #fff;
+    padding: 16px;
+    background-color: #ffffff00;
+    font-size: 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    box-shadow: inset 2px 2px 6px #babecc, inset -4px -5px 8px #fff;
+    transition: all .2s ease-in-out;
+}
+
+.input:hover {
+    box-shadow: inset 2px 2px 2px #babecc, inset -1px -2px 5px #fff;
+}
+
+.textarea {
+    color: #868a9a;
+    text-shadow: 1px 1px 0 #fff;
+    padding: 16px;
+    background-color: #ffffff00;
+    font-size: 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    box-shadow: inset 2px 2px 6px #babecc, inset -4px -5px 8px #fff;
+    transition: all .2s ease-in-out;
+}
+
+.textarea:hover {
+    box-shadow: inset 2px 2px 2px #babecc, inset -1px -2px 5px #fff;
+}
+
+.fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+.legend {
+    width: 100%;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #0000008a;
+}
+
+.select {
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: -6px -5px 12px white, 0px 4px 15px rgba(0, 0, 0, 0.15);
+    background-color: #ffffff00;
+    color: #868a9a;
+}
+
+.select:not([multiple]):not([size]) {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-right: 20px;
+    background-image: url(data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2224%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23666%22%20points%3D%2212%201%209%206%2015%206%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23666%22%20points%3D%2212%2013%209%208%2015%208%22%20%2F%3E%0A%3C%2Fsvg%3E%0A);
+    background-repeat: no-repeat;
+    background-position: 99.5% 50%;
+}
+
+.radio {
+    border-radius: 50%;
+}
+
+.radio,
+.checkbox {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    overflow: hidden;
+    margin-top: -4px;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    transition: .2s ease-in-out;
+    transition-property: box-shadow;
+    box-shadow: -6px -5px 12px white, 0px 4px 15px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.radio:checked,
+.checkbox:checked {
+    box-shadow: 0 0 0 rgba(0, 0, 0, .2), 0 0 0 rgba(255, 255, 255, .8), inset 3px 3px 5px #dadada, inset -3px -3px 5px #ffffff;
+}
+
+.radio:disabled,
+.checkbox:disabled {
+    background-color: #00000024;
+    cursor: no-drop;
+}
+
+.radio-label,
+.checkbox-label {
+    color: #0000008a;
+}
+
+.range {
+    box-sizing: border-box;
+    margin: 0;
+    vertical-align: middle;
+    max-width: 100%;
+    width: 100%;
+    -webkit-appearance: none;
+    background: transparent;
+    box-shadow: inset 2px 2px 6px #babecc, inset -4px -5px 8px #fff;
+    padding: 3px;
+    border-radius: 20px;
+}
+
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border-radius: 50%;
+    cursor: default;
+    top: 0;
+    height: 20px;
+    width: 20px;
+    background: linear-gradient(145deg, #ffffff, #d8d8d8);
+    box-shadow: 2px 2px 3px #dadada, -2px -2px 3px #ffffff;
+    cursor: pointer;
+}
+
+
+/* progress 进度条 */
+
+.progress {
+    width: 100%;
+}
+
+.progress-back {
+    height: 24px;
+    border-radius: 10px;
+    box-shadow: inset 7px 7px 15px rgba(56, 56, 56, 0.15), inset -7px -7px 20px rgba(255, 255, 255, 1), 0px 0px 4px rgba(255, 255, 255, .2) !important;
+}
+
+.progress-line {
+    height: 16px;
+    background: linear-gradient(145deg, #2995f3, #227dcc);
+    margin-top: -20px;
+    margin-left: 4px;
+    border-radius: 8px;
+    opacity: 1;
+    animation: sliding 3s ease infinite;
+}
+
+
+/* base 基本样式 */
+
+.n-h1,
+.n-h2,
+.n-h3,
+.n-h4,
+.n-h5,
+.n-h6 {
+    color: #0000008a;
+    word-break: break-word;
+}
