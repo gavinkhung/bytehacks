@@ -17,38 +17,45 @@
     <div class="ui container">
 
         <!-- Nav bar -->
+        
+        <div class="navbar ui secondary menu">
+            <a href="#banner" class="item">Home</a>
+            <a href="#who" class="item">About Us</a>
+            <a href="#faq" class="item">FAQ</a>
+            <a href="#schedule" class="item">Schedule</a>
+            <a href="#prizes" class="item">Prizes</a>
 
-        <div class="paper">
-            <div class="ui secondary menu">
-                <a href="" class="item">Home</a>
-                <a href="" class="item">About Us</a>
-                <a href="" class="item">Prizes</a>
-                <a href="" class="item">Q/A</a>
-                <a href="" class="item">Q/A</a>
-            </div>
+            <a href="#sponsors" class="item">Sponsors</a>
+            <a href="#meet" class="item">Meet</a>
+            <a href="#contact" class="item">Contact</a>
         </div>
 
+        <hr>
+
         <!-- Banner -->
-        <div class="ui grid">
-            <div class="ten wide column paper">
-                <h1>Byte Hacks</h1>
-                <span class="font-italic font-weight-bold" id="typed"> </span>
+        <div id="banner" class="paper">
+            <div class="ui grid">
+                <div class="ten wide column">
+                    <h1>Byte Hacks</h1>
+                    <span class="font-italic font-weight-bold" id="typed"> </span>
+                </div>
             </div>
         </div>
 
         <hr>
 
         <!-- Who are we -->
-        <div class="paper">
+        <div id="who" class="paper">
             <div id="event" class="ui centered huge header">Who are we</div>
             <div class="ui text container">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto saepe commodi, sunt alias, excepturi mollitia aliquam iste esse eligendi animi obcaecati eveniet dicta maiores vero libero nihil tempora. Architecto tempore dicta eum laborum, alias earum sunt autem enim magni nemo ratione dignissimos sint porro quod, reprehenderit consequatur ad numquam. Tenetur architecto in maxime fugiat deserunt adipisci, itaque quae voluptatem voluptatum perspiciatis beatae odit, nihil totam natus nam voluptates tempora possimus consequuntur qui nobis quia repellendus soluta inventore? Voluptates magnam qui quibusdam perferendis blanditiis praesentium quos voluptatum id, harum maxime distinctio ducimus, excepturi officiis numquam. Nobis ullam fuga explicabo laudantium saepe?</p>
             </div>
         </div>
 
+        <hr>
 
         <!-- Q/A -->
-        <div class="paper">
+        <div id="faq" class="paper">
             <div id="event" class="ui centered huge header">Frequently Asked Questions</div>
             <div class="ui equal width grid">
                 <div class="equal width row">
@@ -80,10 +87,8 @@
         <hr>
 
         <!-- Schedule -->
-        <div class="paper">
+        <div id="schedule" class="paper">
             <div id="event" class="ui centered huge header">Schedule</div>
-            
-
             <div class="ui middle aligned divided list">
                 <div class="item">
                     <div class="right floated content">
@@ -121,9 +126,10 @@
 
         </div>
 
-
+        <hr>
+        
         <!-- Prizes -->
-        <div class="paper">
+        <div id="prizes" class="paper">
             <div id="event" class="ui centered huge header">Prizes</div>
 
             <div class="ui middle aligned divided list">
@@ -162,13 +168,17 @@
             </div>
         </div>
 
+        <hr>
+
         <!-- Sponsors -->
-        <div class="paper">
+        <div id="sponsors" class="paper">
             <div id="event" class="ui centered huge header">Sponsors</div>
         </div>
 
+        <hr>
+        
         <!-- Meet the team -->
-        <div class="paper">
+        <div id="meet" class="paper">
             <div id="event" class="ui centered huge header">Meet the team</div>
             <div class="ui centered link cards">
                 <div class="ui card">
@@ -233,8 +243,10 @@
             </div>
         </div>
 
+        <hr>
+
         <!-- Form spree-->
-        <div class="paper">
+        <div id="contact" class="paper">
             <div id="event" class="ui centered huge header">Send us a message!</div>
             <div class="ui vertical stripe">
                 <div class="ui container">
@@ -259,7 +271,6 @@
         </div>
     </div>
 
-    
     <script>
         var typed = new Typed('#typed', {
           strings: [" Byte Hacks", " Online Hackathon", " Prizes"],
@@ -268,6 +279,20 @@
           backDelay: 2000,
           showCursor: false,
           loop: true
+        });
+    </script>
+    <script>
+        // smooth scroll
+        $('.navbar a').on('click', function(e){
+            if(this.hash !== ''){
+                e.preventDefault();
+                const hash = this.hash;
+
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800);
+            }
+            
         });
     </script>
 </body>
