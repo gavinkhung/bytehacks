@@ -3,8 +3,7 @@ $('#navbar a').on('click', function(e){
     if(this.hash !== 'who'){
         e.preventDefault();
         const hash = this.hash;
-
-        $('html, body').animate({
+        $('.box').animate({
             scrollTop: $(hash).offset().top-window.innerHeight/15
         }, 800);
     }
@@ -12,9 +11,7 @@ $('#navbar a').on('click', function(e){
 });
 
 // scroll magic
-$(document).ready(function(){
-    let controller = new ScrollMagic.Controller();
-
+$('.box').ready(function(){
     $('.paper').each(function(){
         new ScrollMagic.Scene({
             triggerElement: this
