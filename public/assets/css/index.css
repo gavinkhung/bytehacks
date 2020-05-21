@@ -1,10 +1,13 @@
 body {
     overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
 .box {
     height: 100vh;
     width: 100vw;
     overflow: scroll;
+    overflow-x: hidden;
 }
 .paper {
     min-height: 90vh;
@@ -29,7 +32,7 @@ input {
 #banner {
     background: url("../imgs/vectors/banner.svg") no-repeat center center;
     background-size: cover;
-    margin-top: 5%;
+    margin-top: 5vh;
 }
 #who {
     background: url("../imgs/vectors/who.svg") no-repeat center center;
@@ -42,7 +45,20 @@ input {
 #navbar {
     z-index: 1;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+#navbar a {
+    text-align: center;
+    text-decoration: none;
+    flex: 1;
 }
 .message {
     height: 10%;
 }
+@media only screen and (min-width: 768px) {
+    #navbar {
+        flex-direction: row;
+    }
+  }

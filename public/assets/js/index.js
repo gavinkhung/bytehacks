@@ -4,10 +4,9 @@ $('#navbar a').on('click', function(e){
         e.preventDefault();
         const hash = this.hash;
         $('.box').animate({
-            scrollTop: $(hash).offset().top-window.innerHeight/15
+            scrollTop: $(hash).offset().top-window.innerHeight/20
         }, 800);
     }
-    
 });
 
 // scroll magic
