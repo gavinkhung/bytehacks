@@ -56,20 +56,20 @@ html, body {
 .with-shadow, .outset, button, .checktext input + span, .blue-button, .checktext input:checked + span, button.blue-button, .green-button, button.green-button, .green-button.blue-button, .red-button, button.red-button, .red-button.blue-button, .red-button.green-button, input[type="button"], input[type="submit"], input[type="reset"], select, input[type="text"]:not(select):focus, input[type="search"]:not(select):focus, input[type="tel"]:not(select):focus, input[type="url"]:not(select):focus,
 input[type="email"]:not(select):focus, input[type="password"]:not(select):focus, input[type="date"]:not(select):focus,
 input[type="month"]:not(select):focus, input[type="week"]:not(select):focus, input[type="time"]:not(select):focus,
-input[type="number"]:not(select):focus, input[type="color"]:not(select):focus, select:not(select):focus, textarea:not(select):focus, .paper {
-  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1), -6px -6px 10px white; }
+input[type="number"]:not(select):focus, input[type="color"]:not(select):focus, select:not(select):focus, textarea:not(select):focus, p:not(select):focus, .paper {
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2), -6px -6px 10px white; }
 
 .outset, button, .checktext input + span, .blue-button, .checktext input:checked + span, button.blue-button, .green-button, button.green-button, .green-button.blue-button, .red-button, button.red-button, .red-button.blue-button, .red-button.green-button, input[type="button"], input[type="submit"], input[type="reset"], select, input[type="text"]:not(select):focus, input[type="search"]:not(select):focus, input[type="tel"]:not(select):focus, input[type="url"]:not(select):focus,
 input[type="email"]:not(select):focus, input[type="password"]:not(select):focus, input[type="date"]:not(select):focus,
 input[type="month"]:not(select):focus, input[type="week"]:not(select):focus, input[type="time"]:not(select):focus,
-input[type="number"]:not(select):focus, input[type="color"]:not(select):focus, select:not(select):focus, textarea:not(select):focus, .paper {
+input[type="number"]:not(select):focus, input[type="color"]:not(select):focus, select:not(select):focus, textarea:not(select):focus, p:not(select):focus, .paper {
   border-radius: 10px;
   background: #f2f3f7; }
 
 .inset, hr, button.active, .checktext input + span.active, .active.blue-button, .active.green-button, .active.red-button, button:active, .checktext input + span:active, .blue-button:active, .green-button:active, .red-button:active, input.active[type="button"], input[type="button"]:active, input.active[type="submit"], input[type="submit"]:active, input.active[type="reset"], input[type="reset"]:active, input[type="text"]:not(select), input[type="search"]:not(select), input[type="tel"]:not(select), input[type="url"]:not(select),
 input[type="email"]:not(select), input[type="password"]:not(select), input[type="date"]:not(select),
 input[type="month"]:not(select), input[type="week"]:not(select), input[type="time"]:not(select),
-input[type="number"]:not(select), input[type="color"]:not(select), select:not(select), textarea:not(select) {
+input[type="number"]:not(select), input[type="color"]:not(select), select:not(select), textarea:not(select), p:not(select) {
   border-radius: 10px;
   box-shadow: 0 0 transparent, 0 0 transparent, inset 3px 3px 5px rgba(0, 0, 0, 0.1), inset -3px -3px 5px white;
   background: #f8f9fb; }
@@ -81,7 +81,7 @@ input[type="number"]:not(select), input[type="color"]:not(select), select:not(se
   font-size: 1.2em;
   background: #f2f3f7; }
 
-section, article, .section, .article, .paper {
+article, .section, .article, .paper {
   line-height: 2em;
   word-wrap: break-word;
   word-break: normal;
@@ -109,8 +109,7 @@ input[type="number"], input[type="color"], select, textarea {
   -ms-user-select: text;
   transition: box-shadow .2s; }
 
-textarea {
-  height: 100px;
+textarea, p {
   padding: 1.25em; }
 
 select {
@@ -119,20 +118,20 @@ select {
   background-size: 1.2em;
   padding-right: 3em; }
 
-input::placeholder, textarea::placeholder {
+input::placeholder, textarea::placeholder, p::placeholder{
   opacity: 1;
   transition: opacity .2s;
   color: inherit; }
 
-input:focus::placeholder, textarea:focus::placeholder {
+input:focus::placeholder, textarea:focus::placeholder, p:focus::placeholder{
   opacity: .2; }
 
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+input:-ms-input-placeholder, textarea:-ms-input-placeholder, p:-ms-input-placeholder {
   opacity: 1;
   transition: opacity .2s;
   color: inherit; }
 
-input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder {
+input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder, p:focus:-ms-input-placeholder {
   opacity: .2; }
 
 input[type="search"]::-webkit-search-decoration,
@@ -381,7 +380,7 @@ blockquote {
                 0 1px 5px 0 rgba(0, 0, 0, .12);
 }
 
-section, article {
+article {
     width: 95%;
     max-width: 500px;
     margin: 40px auto;
@@ -414,7 +413,7 @@ section, article {
     vertical-align: middle;
 }
 
-section.selectable { text-align: justify; }
+.selectable { text-align: justify; }
 
 .checktext-container {
     display: flex;

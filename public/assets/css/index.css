@@ -1,19 +1,9 @@
 body {
     height: 100vw;
-    
-}
-.container {
-    width: 100%;
-    height: 100%;
-}
-.navbar {
-    position: fixed;
-    z-index: 1;
-    width: 100%;
 }
 .paper {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     margin-top: 5%;
     margin-bottom: 5%;
 }
@@ -33,11 +23,20 @@ input {
 #banner {
     background: url("../imgs/vectors/banner.svg") no-repeat center center;
     background-size: cover;
+    margin-top: 5%;
 }
 #who {
     background: url("../imgs/vectors/who.svg") no-repeat center center;
     background-size: cover;
 }
 .temp {
-    background-color: orange;
+    background: url("../imgs/vectors/banner.svg") no-repeat center center;
+    background-size: cover;
+}
+#navbar {
+    z-index: 1;
+    width: 100%;
+}
+.message {
+    height: 10%;
 }

@@ -9,12 +9,10 @@
     <link rel="stylesheet" href="public/assets/css/skeuos.css">
     <link rel="stylesheet" href="public/assets/css/index.css">
 </head>
-<body>    
+<body>
     <div class="ui container">
-
         <!-- Nav bar -->
-        
-        <div class="navbar ui secondary menu">
+        <div id="navbar" class="menu ui fixed top sticky">
             <a href="#banner" class="item">Home</a>
             <a href="#who" class="item">About Us</a>
             <a href="#faq" class="item">FAQ</a>
@@ -31,7 +29,12 @@
             <div class="ui grid">
                 <div class="ten wide column">
                     <h1>Byte Hacks</h1>
-                    <span class="font-italic font-weight-bold" id="typed"> </span>
+                    <p>
+                        July
+                    </p>
+                </div>
+                <div class="six wide column">
+                    <button class="green-button">Sign up</button>
                 </div>
             </div>
         </div>
@@ -41,7 +44,7 @@
         <!-- Who are we -->
         <div id="who" class="paper">
             <div id="event" class="ui centered huge header">Who are we</div>
-            <div class="ui text container">
+            <div class="text">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto saepe commodi, sunt alias, excepturi mollitia aliquam iste esse eligendi animi obcaecati eveniet dicta maiores vero libero nihil tempora. Architecto tempore dicta eum laborum, alias earum sunt autem enim magni nemo ratione dignissimos sint porro quod, reprehenderit consequatur ad numquam. Tenetur architecto in maxime fugiat deserunt adipisci, itaque quae voluptatem voluptatum perspiciatis beatae odit, nihil totam natus nam voluptates tempora possimus consequuntur qui nobis quia repellendus soluta inventore? Voluptates magnam qui quibusdam perferendis blanditiis praesentium quos voluptatum id, harum maxime distinctio ducimus, excepturi officiis numquam. Nobis ullam fuga explicabo laudantium saepe?</p>
             </div>
         </div>
@@ -53,26 +56,43 @@
             <div id="event" class="ui centered huge header">Frequently Asked Questions</div>
             <div class="ui equal width grid">
                 <div class="equal width row">
-                <div class="column">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sunt odit iusto qui quam mollitia recusandae dolore tempora, laudantium corrupti eum vel aliquam similique sapiente beatae suscipit nulla placeat expedita?
+                    <div class="column">
+                        <h5>...</h5>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet nihil quibusdam magnam laborum dolores veniam sed officia eligendi esse illum quasi nesciunt neque libero ipsa distinctio modi, pariatur quos est!
+                        </p>
+                    </div>
+                    <div class="column">
+                        <h5>...</h5>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet nihil quibusdam magnam laborum dolores veniam sed officia eligendi esse illum quasi nesciunt neque libero ipsa distinctio modi, pariatur quos est!
+                        </p>
+                    </div>
+                    <div class="column">
+                        <h5>...</h5>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet nihil quibusdam magnam laborum dolores veniam sed officia eligendi esse illum quasi nesciunt neque libero ipsa distinctio modi, pariatur quos est!
+                        </p>
+                    </div>
                 </div>
-                <div class="column">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sunt odit iusto qui quam mollitia recusandae dolore tempora, laudantium corrupti eum vel aliquam similique sapiente beatae suscipit nulla placeat expedita?
-                </div>
-                <div class="column">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sunt odit iusto qui quam mollitia recusandae dolore tempora, laudantium corrupti eum vel aliquam similique sapiente beatae suscipit nulla placeat expedita?
-                </div>
-                </div>
-
                 <div class="equal width row">
                     <div class="column">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sunt odit iusto qui quam mollitia recusandae dolore tempora, laudantium corrupti eum vel aliquam similique sapiente beatae suscipit nulla placeat expedita?
+                        <h5>...</h5>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet nihil quibusdam magnam laborum dolores veniam sed officia eligendi esse illum quasi nesciunt neque libero ipsa distinctio modi, pariatur quos est!
+                        </p>
                     </div>
                     <div class="column">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sunt odit iusto qui quam mollitia recusandae dolore tempora, laudantium corrupti eum vel aliquam similique sapiente beatae suscipit nulla placeat expedita?
+                        <h5>...</h5>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet nihil quibusdam magnam laborum dolores veniam sed officia eligendi esse illum quasi nesciunt neque libero ipsa distinctio modi, pariatur quos est!
+                        </p>
                     </div>
                     <div class="column">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sunt odit iusto qui quam mollitia recusandae dolore tempora, laudantium corrupti eum vel aliquam similique sapiente beatae suscipit nulla placeat expedita?
+                        <h5>...</h5>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet nihil quibusdam magnam laborum dolores veniam sed officia eligendi esse illum quasi nesciunt neque libero ipsa distinctio modi, pariatur quos est!
+                        </p>
                     </div>
                 </div>
             </div>
@@ -255,7 +275,7 @@
                         </label>
                         <label class="field">
                             Message:
-                            <textarea name="message" placeholder="message" required></textarea>
+                            <textarea class="message" name="message" placeholder="message" required></textarea>
                         </label>
                         
                         <button value="Send">Submit</button>

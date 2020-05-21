@@ -1,11 +1,11 @@
 // smooth scroll
-$('.navbar a').on('click', function(e){
+$('#navbar a').on('click', function(e){
     if(this.hash !== 'who'){
         e.preventDefault();
         const hash = this.hash;
 
         $('html, body').animate({
-            scrollTop: $(hash).offset().top
+            scrollTop: $(hash).offset().top-window.innerHeight/15
         }, 800);
     }
     
