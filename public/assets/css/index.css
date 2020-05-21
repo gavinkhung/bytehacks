@@ -12,14 +12,14 @@ body {
 }
 .paper {
     min-height: 90vh;
-    
     scroll-snap-align: center;
     scroll-snap-stop: normal;
-    scroll-margin: 10vh;
-
+    scroll-margin-left: 10vw;
+    scroll-margin-right: 10vw;
+    scroll-margin-top: 10vh;
+    scroll-margin-bottom: 10vh;
     margin-left: 10vw;
     margin-right: 10vw;
-
     margin-top: 10vh;
     margin-bottom: 10vh;
 }

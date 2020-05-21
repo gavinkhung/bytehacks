@@ -12,6 +12,7 @@ $('#navbar a').on('click', function(e){
 
 // scroll magic
 $('.box').ready(function(){
+    let controller = new ScrollMagic.Controller();
     $('.paper').each(function(){
         new ScrollMagic.Scene({
             triggerElement: this
