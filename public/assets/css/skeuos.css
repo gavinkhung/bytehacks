@@ -57,7 +57,7 @@ html, body {
 input[type="email"]:not(select):focus, input[type="password"]:not(select):focus, input[type="date"]:not(select):focus,
 input[type="month"]:not(select):focus, input[type="week"]:not(select):focus, input[type="time"]:not(select):focus,
 input[type="number"]:not(select):focus, input[type="color"]:not(select):focus, select:not(select):focus, textarea:not(select):focus, p:not(select):focus, .paper {
-  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2), -6px -6px 10px white; }
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.3), -6px -6px 10px white; }
 
 .outset, button, .checktext input + span, .blue-button, .checktext input:checked + span, button.blue-button, .green-button, button.green-button, .green-button.blue-button, .red-button, button.red-button, .red-button.blue-button, .red-button.green-button, input[type="button"], input[type="submit"], input[type="reset"], select, input[type="text"]:not(select):focus, input[type="search"]:not(select):focus, input[type="tel"]:not(select):focus, input[type="url"]:not(select):focus,
 input[type="email"]:not(select):focus, input[type="password"]:not(select):focus, input[type="date"]:not(select):focus,
@@ -71,7 +71,7 @@ input[type="email"]:not(select), input[type="password"]:not(select), input[type=
 input[type="month"]:not(select), input[type="week"]:not(select), input[type="time"]:not(select),
 input[type="number"]:not(select), input[type="color"]:not(select), select:not(select), textarea:not(select), p:not(select) {
   border-radius: 10px;
-  box-shadow: 0 0 transparent, 0 0 transparent, inset 3px 3px 5px rgba(0, 0, 0, 0.1), inset -3px -3px 5px white;
+  box-shadow: 0 0 transparent, 0 0 transparent, inset 3px 3px 5px rgba(0, 0, 0, 0.3), inset -3px -3px 5px white;
   background: #f8f9fb; }
 
 .paper {
@@ -245,13 +245,13 @@ input[type=checkbox], input[type=radio] {
   height: 1.2em;
   width: 1.2em;
   margin: 0 .3em;
-  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2), -2px -2px 3px white, inset 1px 1px 2px rgba(0, 0, 0, 0.2), inset -1px -1px 2px white;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3), -2px -2px 3px white, inset 1px 1px 2px rgba(0, 0, 0, 0.3), inset -1px -1px 2px white;
   border: 0.15em solid #f2f3f7;
   vertical-align: text-bottom;
   transition-property: background, box-shadow;
   transition-duration: .2s; }
   input[type=checkbox]:active, input[type=radio]:active {
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2), -2px -2px 3px white, inset 1px 1px 2px rgba(0, 0, 0, 0.2), inset -1px -1px 2px white, inset 0 0.1em 0.25em rgba(0, 0, 0, 0.2); }
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3), -2px -2px 3px white, inset 1px 1px 2px rgba(0, 0, 0, 0.3), inset -1px -1px 2px white, inset 0 0.1em 0.25em rgba(0, 0, 0, 0.3); }
   input[type=checkbox]:checked, input[type=radio]:checked {
     border-width: .1em;
     border-color: #115fe2;
@@ -296,7 +296,7 @@ input[type=radio] {
       transition-property: box-shadow, background-color;
       transition-duration: .2s;
       transition-delay: .2s;
-      box-shadow: 3px 3px 2px -2px rgba(0, 0, 0, 0.1), inset 2px 2px 2px 1px rgba(0, 0, 0, 0.1), inset -2px -2px 1px white; }
+      box-shadow: 3px 3px 2px -2px rgba(0, 0, 0, 0.3), inset 2px 2px 2px 1px rgba(0, 0, 0, 0.3), inset -2px -2px 1px white; }
       .switch input + div::before {
         content: '';
         display: block;
@@ -304,7 +304,7 @@ input[type=radio] {
         width: calc(2.5rem + 2px);
         border-radius: 100%;
         background: white;
-        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), inset 0 -1px 3px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.3);
         transform: translate(0, -1px);
         transition: transform .2s; }
     .switch input:checked + div {

@@ -3,6 +3,10 @@ $('#navbar a').on('click', function(e){
     if(this.hash !== 'who'){
         e.preventDefault();
         const hash = this.hash;
+        document.querySelector('.box').scrollTop = 0;
+        $('.box').animate({
+            scrollTop: 0
+        }, 0);
         $('.box').animate({
             scrollTop: $(hash).offset().top-window.innerHeight/20
         }, 800);
