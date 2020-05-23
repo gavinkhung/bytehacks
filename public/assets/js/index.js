@@ -26,3 +26,13 @@ $('.box').ready(function(){
         .addTo(controller);
     });
 });
+
+$(window).on('load, resize', function() {
+    console.log($(window).width());
+    if ($(window).width() < 750) {
+        $('#navbar').removeClass('fixed');
+
+    } else {
+        $('#navbar').addClass('fixed');
+    }
+});
