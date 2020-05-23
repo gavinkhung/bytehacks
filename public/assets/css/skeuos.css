@@ -203,7 +203,9 @@ a, a:link, a:visited, a:hover a:active {
   font-weight: bold;
   text-decoration: none; }
   a, a *, a:link, a:link *, a:visited, a:visited *, a:hover a:active, a:hover a:active * {
-    cursor: pointer; }
+    cursor: pointer;
+    font-weight: 500;
+}
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.5em; }

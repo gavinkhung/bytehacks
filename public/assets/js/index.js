@@ -22,7 +22,6 @@ $('.box').ready(function(){
         })
         .setClassToggle(this, 'fade-in')
         .reverse(false)
-        .addIndicators()
         .addTo(controller);
     });
 });
