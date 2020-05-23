@@ -8,7 +8,7 @@ $('#navbar a').on('click', function(e){
             scrollTop: 0
         }, 0);
         $('.box').animate({
-            scrollTop: $(hash).offset().top-window.innerHeight/20
+            scrollTop: $(hash).offset().top-window.innerHeight/15
         }, 800);
     }
 });
@@ -20,7 +20,7 @@ $('.box').ready(function(){
         new ScrollMagic.Scene({
             triggerElement: this
         })
-        .setClassToggle(this, 'temp')
+        .setClassToggle(this, 'fade-in')
         .reverse(false)
         .addIndicators()
         .addTo(controller);
