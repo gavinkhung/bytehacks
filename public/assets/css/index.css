@@ -40,9 +40,8 @@ input {
     width: 100%;
 }
 #banner {
-    margin-top: 6vh;
-    height: 80vh;
-    background-image: url("../imgs/vectors/background.svg");
+    margin-top: 7vh;
+    background-image: url("../imgs/vectors/banner.svg");
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -53,4 +52,7 @@ input {
 }
 .message {
     height: 10%;
+}
+.centered {
+    text-align: center;
 }
