@@ -23,7 +23,7 @@ body {
 }
 .fade-in {
     opacity: 1;
-    background-image: url("../imgs/vectors/background.svg");
+    background-image: url("../imgs/vectors/who.svg");
     background-size: cover;
 }
 form {
@@ -48,7 +48,13 @@ input {
     justify-content: center;
 }
 #who {
+    display: flex;
+    flex-direction: column;
     
+    align-items: center;
+}
+.text {
+    width: 50%;
 }
 .message {
     height: 10%;
