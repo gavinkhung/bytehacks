@@ -20,11 +20,11 @@ body {
     margin-bottom: 10vh;
     opacity: 0;
     transition: all 0.5s ease-out;
+    background-size: cover;
 }
 .fade-in {
     opacity: 1;
     background-image: url("../imgs/vectors/who.svg");
-    background-size: cover;
 }
 form {
     display: flex;
@@ -42,7 +42,6 @@ input {
 #banner {
     margin-top: 7vh;
     background-image: url("../imgs/vectors/banner.svg");
-    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,8 +49,28 @@ input {
 #who {
     display: flex;
     flex-direction: column;
-    
     align-items: center;
+}
+#faq {
+    background-image: url("../imgs/vectors/faq.svg");
+}
+#schedule {
+    background-image: url("../imgs/vectors/schedule.svg");
+}
+#contact {
+    background-image: url("../imgs/vectors/contact.svg");
+}
+#awards {
+    background-image: url("../imgs/vectors/awards.svg");
+}
+#sponsors {
+    background-image: url("../imgs/vectors/sponsors.svg");
+}
+#meet {
+    background-image: url("../imgs/vectors/meet.svg");
+}
+#contact {
+    background-image: url("../imgs/vectors/contact.svg");
 }
 .text {
     width: 50%;
