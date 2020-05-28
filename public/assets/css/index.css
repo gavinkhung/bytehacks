@@ -38,16 +38,20 @@ textarea {
 }
 p, a {
     font-weight: 400;
+    color: black;
+}
+.blue-button a {
+    color: #ffffff;
 }
 input {
     width: 100%;
 }
 #banner {
-    margin-top: 7vh;
     background-image: url("../imgs/vectors/banner.svg");
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 7vh;
 }
 #who {
     display: flex;
@@ -70,7 +74,7 @@ input {
     align-items: center;
 }
 #sponsors {
-    background-image: url("../imgs/vectors/sponsors.svg");
+    background-image: url("../imgs/sponsors/sponsors.png");
 }
 #meet {
     background-image: url("../imgs/vectors/meet.svg");
@@ -86,4 +90,7 @@ input {
 }
 .centered {
     text-align: center;
+}
+h3 {
+    color: #5669ae;
 }

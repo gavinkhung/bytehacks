@@ -26,12 +26,18 @@ $('.box').ready(function(){
     });
 });
 
-$(window).on('load, resize', function() {
-    console.log($(window).width());
+$(document).ready(function(){
+    resize();
+});
+
+$(window).on('resize', function() {
+    resize();
+});
+
+function resize(){
     if ($(window).width() < 750) {
         $('#navbar').removeClass('fixed');
-
     } else {
         $('#navbar').addClass('fixed');
     }
-});
+}
