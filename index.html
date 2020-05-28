@@ -35,13 +35,16 @@
                     <p>July 31st to August 3rd</p>
                 </div>
                 <div class="row">
-                    <a href="https://bytehacks1.typeform.com/to/WhoxyB" class="blue-button">Sign up</a></button>
+                    <a href="https://bytehacks1.typeform.com/to/WhoxyB" class="blue-button" target="_blank">Sign up</a></button>
                 </div>
                 <div class="row">
-                    <a href="" class="blue-button">Join the Discord</a>
-                </div>
-                <div class="row">
-                    <a href="https://drive.google.com/file/d/1TPDFxoTfkBRa2N7tkzG0EaAA3lKekciu/view?usp=sharing" class="blue-button">Prospectus</a></button>
+                    <button id="prospectus" class="blue-button">Prospectus</button>
+                    <div id="prospectus_image" class="ui modal">
+                        <img src="public/assets/imgs/prospectus1.jpg" alt="prospectus1">
+                        <img src="public/assets/imgs/prospectus2.jpg" alt="prospectus2">
+                        <img src="public/assets/imgs/prospectus3.jpg" alt="prospectus3">
+                        <img src="public/assets/imgs/prospectus4.jpg" alt="prospectus4">
+                    </div>
                 </div>
             </div>
         </div>
@@ -245,6 +248,24 @@
         <!-- Sponsors -->
         <div id="sponsors" class="paper">
             <h2 class="centered">Sponsors</h2>
+            <div class="ui stackable four column grid">
+                <div class="column">
+                    <a href="https://www.bugsee.com/" target="_blank">
+                        <img src="public/assets/imgs/sponsors/bugsee.svg" alt="bugsee">
+                    </a>
+                </div>
+                <div class="column">
+                    <a href="https://magoosh.com/" target="_blank">
+                        <img src="public/assets/imgs/sponsors/magoosh.png" alt="magoosh">
+                    </a>
+                </div>
+                <div class="column">
+                    <img src="" alt="">
+                </div>
+                <div class="column">
+                    <img src="" alt="">
+                </div>
+            </div>
         </div>
 
         <hr>
@@ -292,7 +313,7 @@
             <div class="ui centered link cards">
                 <div class="ui card">
                     <div class="image">
-                        <img class="ui medium rounded image" src="public/assets/imgs/team/arnav">
+                        <img class="ui medium rounded image" src="public/assets/imgs/team/arnav.jpeg">
                     </div>
                     <div class="content">
                         <a class="header">Arnav R.</a>
@@ -303,7 +324,7 @@
                 </div>
                 <div class="ui card">
                     <div class="image">
-                        <img class="ui medium rounded image" src="public/assets/imgs/team/sanya">
+                        <img class="ui medium rounded image" src="public/assets/imgs/team/sanya.jpeg">
                     </div>
                     <div class="content">
                         <a class="header">Sanya G.</a>
@@ -342,6 +363,8 @@
             </div>
         </div>
     </div>
+
+    <h3>Website by Gavin Hung</h3>
     
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>

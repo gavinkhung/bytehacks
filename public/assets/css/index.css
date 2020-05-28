@@ -74,7 +74,7 @@ input {
     align-items: center;
 }
 #sponsors {
-    background-image: url("../imgs/sponsors/sponsors.png");
+    background-image: url("../imgs/vectors/sponsors.svg");
 }
 #meet {
     background-image: url("../imgs/vectors/meet.svg");
@@ -93,4 +93,12 @@ input {
 }
 h3 {
     color: #5669ae;
+}
+#prospectus_image {
+    height: 90%;
+    width: 50%;
+}
+#prospectus_image img {
+    width: 100%;
+    height: 100%;
 }

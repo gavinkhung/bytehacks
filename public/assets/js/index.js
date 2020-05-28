@@ -26,14 +26,13 @@ $('.box').ready(function(){
     });
 });
 
+// resize
 $(document).ready(function(){
     resize();
 });
-
 $(window).on('resize', function() {
     resize();
 });
-
 function resize(){
     if ($(window).width() < 750) {
         $('#navbar').removeClass('fixed');
@@ -41,3 +40,8 @@ function resize(){
         $('#navbar').addClass('fixed');
     }
 }
+
+// modal
+$("#prospectus").click(function(){
+    $('#prospectus_image.ui.modal').modal('show');
+});
