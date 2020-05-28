@@ -94,11 +94,19 @@ input {
 h3 {
     color: #5669ae;
 }
-#prospectus_image {
-    height: 90%;
-    width: 50%;
+p a {
+    color: #59b0a2;
+    text-decoration: underline;
 }
 #prospectus_image img {
     width: 100%;
     height: 100%;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+#rubric_image img {
+    width: 100%;
+    height: 100%;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
 }

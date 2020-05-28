@@ -45,3 +45,8 @@ function resize(){
 $("#prospectus").click(function(){
     $('#prospectus_image.ui.modal').modal('show');
 });
+
+$("#rubric").click(function(e){
+    e.preventDefault();
+    $('#rubric_image.ui.modal').modal('show');
+});
