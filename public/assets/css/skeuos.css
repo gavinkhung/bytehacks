@@ -54,7 +54,9 @@ html, body {
 input[type="email"]:not(select):focus, input[type="password"]:not(select):focus, input[type="date"]:not(select):focus,
 input[type="month"]:not(select):focus, input[type="week"]:not(select):focus, input[type="time"]:not(select):focus,
 input[type="number"]:not(select):focus, input[type="color"]:not(select):focus, select:not(select):focus, textarea:not(select):focus, p:not(select):focus, .paper {
-  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.3)}
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.3), 12px 12px 24px #7e7e80, ;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.3);
+}
 
 .outset, button, .checktext input + span, .blue-button, .checktext input:checked + span, button.blue-button, .green-button, button.green-button, .green-button.blue-button, .red-button, button.red-button, .red-button.blue-button, .red-button.green-button, input[type="button"], input[type="submit"], input[type="reset"], select, input[type="text"]:not(select):focus, input[type="search"]:not(select):focus, input[type="tel"]:not(select):focus, input[type="url"]:not(select):focus,
 input[type="email"]:not(select):focus, input[type="password"]:not(select):focus, input[type="date"]:not(select):focus,
@@ -331,7 +333,6 @@ pre {
 
 code, code *, pre, pre * {
   font-size: .9rem;
-  font-family: monospace;
   line-height: 2em;
   cursor: auto;
   user-select: text;
@@ -347,15 +348,6 @@ blockquote {
   border-radius: 4px;
   box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.05);
   border-left: 6px solid #367bf0; }
-
-@font-face {
-  font-family: 'Cantarell';
-  font-style: normal;
-  font-weight: 100;
-  font-display: swap;
-  src: local("Cantarell Thin"), local("Cantarell-Thin"), url(Cantarell-Thin.otf); }
-
-  .palette { text-align: center; }
 
 @keyframes palette-animation {
     0%, 100%, 40% {

@@ -94,6 +94,9 @@ input {
 h3 {
     color: #5669ae;
 }
+h1, h2, h3, h4, h5 {
+    font-family: 'Josefin Sans', sans-serif;
+}
 p a {
     color: #59b0a2;
     text-decoration: underline;
@@ -109,4 +112,7 @@ p a {
     height: 100%;
     margin-top: 2vh;
     margin-bottom: 2vh;
+}
+.column img {
+    max-width: 100%;
 }
