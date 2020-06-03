@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
     <link rel="stylesheet" href="public/assets/css/skeuos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="icon" href="public/assets/imgs/vectors/logo.svg">
     <link rel="stylesheet" href="public/assets/css/index.css">
 </head>
@@ -28,14 +28,16 @@
         <div id="banner" class="paper">
             <div class="ui centered grid">
                 <div class="row">
-                    <img src="public/assets/imgs/vectors/logo.svg" alt="B">
-                    <h1>yte Hacks</h1>
+                    <img src="public/assets/imgs/vectors/logo.svg" alt="B" class="logo">
+                    <h1 class="title">yte Hacks</h1>
                 </div>
                 <div class="row">
                     <h4 class="centered">July 31st to August 3rd</h4>
                 </div>
                 <div class="row">
-                    <a href="https://bytehacks1.typeform.com/to/WhoxyB" target="_blank" class="button">Sign up</a></button>
+                    <button id="signUp">
+                        Sign up
+                    </button>
                 </div>
                 <div class="row">
                     <button id="prospectus">Prospectus</button>
@@ -73,7 +75,7 @@
         <div id="faq" class="paper">
             <h2 class="centered">Frequently Asked Questions</h2>
             <div class="ui equal width stackable grid">
-                <div class="equal width row">
+                <div class="equal width row answer">
                     <div class="column">
                         <h5>What is a hackathon?</h5>
                         <p>
@@ -96,7 +98,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="equal width row">
+                <div class="equal width row answer">
                     <div class="column">
                         <h5>Who can attend?</h5>
                         <p>
@@ -264,12 +266,21 @@
                 </div>
                 <div class="column">
                     <a href="https://artofproblemsolving.com/" target="_blank">
-                        <img src="public/assets/imgs/sponsors/aops.png" alt="artofproblemsolving.">
+                        <img src="public/assets/imgs/sponsors/aops.png" alt="artofproblemsolving">
                     </a>
                 </div>
                 <div class="column">
-                    <img src="" alt="">
+                    <a href="https://www.linode.com/" target="_blank">
+                        <img src="public/assets/imgs/sponsors/linode.svg" alt="linode">
+                    </a>
                 </div>
+                <div class="column">
+                    <a href="https://www.echoar.xyz/" target="_blank">
+                        <img src="public/assets/imgs/sponsors/echoAR.png" alt="echoar">
+                    </a>
+                </div>
+
+                
             </div>
         </div>
 
@@ -373,13 +384,14 @@
             <div class="centered">
                   <button class="ui facebook button">
                       <i class="facebook icon"></i>
-                      <a href="https://www.facebook.com/bytehacks1">Facebook</a>
+                      <a href="https://www.facebook.com/bytehacks1" target="_blank">Facebook</a>
                   </button>
                   <button class="ui instagram button">
                     <i class="instagram icon"></i>
-                    <a href="https://www.instagram.com/byte.hacks/">Instagram</a>
+                    <a href="https://www.instagram.com/byte.hacks/" target="_blank">Instagram</a>
                 </button>
             </div>
+            <h4 class="centered"><a href="mailto:bytehacks1@gmail.com" target="_blank" data-content="bytehacks1@gmail.com" data-type="mail" class="email">bytehacks1@gmail.com</a></h4>
         </div>
 
         <h6 class="centered">Website by Gavin Hung</h3>

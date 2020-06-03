@@ -20,7 +20,6 @@ body {
     opacity: 0;
     transition: all 0.5s ease-out;
     background-size: cover;
-    font-weight: 900;
 }
 .fade-in {
     opacity: 1;
@@ -37,11 +36,13 @@ textarea {
     width: 100%;
 }
 p, a {
-    font-weight: 400;
+    font-size: 1.25em;
     color: black;
+    font-weight: 300;
 }
-.blue-button a {
-    color: #ffffff;
+button a {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
 }
 input {
     width: 100%;
@@ -51,7 +52,7 @@ input {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 7vh;
+    margin-top: 8vh;
 }
 #who {
     display: flex;
@@ -91,11 +92,17 @@ input {
 .centered {
     text-align: center;
 }
+h1, h2 {
+    font-weight: 700;
+}
 h3 {
     color: #5669ae;
 }
 h1, h2, h3, h4, h5 {
     font-family: 'Josefin Sans', sans-serif;
+}
+h3, h4, h5 {
+    font-weight: 400;
 }
 p a {
     color: #59b0a2;
@@ -115,4 +122,10 @@ p a {
 }
 .column img {
     max-width: 100%;
+}
+.email {
+    text-decoration: underline;
+}
+.answer {
+    height: 100%;
 }

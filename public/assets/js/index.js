@@ -8,7 +8,7 @@ $('#navbar a').on('click', function(e){
             scrollTop: 0
         }, 0);
         $('.box').animate({
-            scrollTop: $(hash).offset().top-window.innerHeight/15
+            scrollTop: $(hash).offset().top-window.innerHeight/12
         }, 800);
     }
 });
@@ -50,3 +50,18 @@ $("#rubric").click(function(e){
     e.preventDefault();
     $('#rubric_image.ui.modal').modal('show');
 });
+
+// sign up
+$("#signUp").click(function(e){
+    e.preventDefault();
+    window.open("https://bytehacks1.typeform.com/to/WhoxyB", "_blank");
+});
+
+//
+let isIE = /*@cc_on!@*/false || !!document.documentMode;
+let isFirefox = typeof InstallTrigger !== 'undefined';
+if(isIE || isFirefox){
+    console.log("isIE", isIE, "isFirefox", isFirefox);
+    $('.logo').remove();
+    $('.title').text("Byte Hacks");
+}
