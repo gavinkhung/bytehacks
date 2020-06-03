@@ -127,5 +127,7 @@ p a {
     text-decoration: underline;
 }
 .answer {
-    height: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
 }
