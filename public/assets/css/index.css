@@ -126,8 +126,3 @@ p a {
 .email {
     text-decoration: underline;
 }
-.answer {
-    height: 40%;
-    display: flex;
-    flex-direction: row;
-}
