@@ -70,9 +70,6 @@ input {
 }
 #awards {
     background-image: url("../imgs/vectors/awards.svg");
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 #sponsors {
     background-image: url("../imgs/vectors/sponsors.svg");
