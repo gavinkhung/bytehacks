@@ -57,6 +57,12 @@ $("#signUp").click(function(e){
     window.open("https://bytehacks1.typeform.com/to/WhoxyB", "_blank");
 });
 
+// devpost
+$("#devpost").click(function(e){
+    e.preventDefault();
+    window.open("https://bytehacks.tech/", "_blank");
+});
+
 //
 let isIE = /*@cc_on!@*/false || !!document.documentMode;
 let isFirefox = typeof InstallTrigger !== 'undefined';
