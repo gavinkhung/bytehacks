@@ -63,6 +63,12 @@ $("#devpost").click(function(e){
     window.open("https://bytehacks.tech/", "_blank");
 });
 
+// youtube
+$("#youtube").click(function(e){
+    e.preventDefault();
+    window.open("https://www.youtube.com/channel/UCaJ4cE6PU3BR9Q6Jg1ygScA/featured?disable_polymer=1", "_blank");
+});
+
 //
 let isIE = /*@cc_on!@*/false || !!document.documentMode;
 let isFirefox = typeof InstallTrigger !== 'undefined';
