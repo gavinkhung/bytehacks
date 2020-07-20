@@ -60,7 +60,7 @@ $("#signUp").click(function(e){
 // devpost
 $("#devpost").click(function(e){
     e.preventDefault();
-    window.open("https://bytehacks.tech/", "_blank");
+    window.open("https://byte-hacks-2020.devpost.com/", "_blank");
 });
 
 // youtube
