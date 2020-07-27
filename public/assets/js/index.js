@@ -63,6 +63,12 @@ $("#devpost").click(function(e){
     window.open("https://byte-hacks-2020.devpost.com/", "_blank");
 });
 
+// discord
+$("#discord").click(function(e){
+    e.preventDefault();
+    window.open("https://discord.com/invite/DKYUKs8", "_blank");
+});
+
 // youtube
 $("#youtube").click(function(e){
     e.preventDefault();
