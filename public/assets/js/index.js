@@ -54,7 +54,7 @@ $("#rubric").click(function(e){
 // sign up
 $("#signUp").click(function(e){
     e.preventDefault();
-    window.open("https://jyechuri652.typeform.com/to/P1rn2ZU5", "_blank");
+    window.open("https://bytehacks1.typeform.com/to/WhoxyB", "_blank");
 });
 
 // devpost
