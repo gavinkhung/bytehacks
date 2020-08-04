@@ -75,10 +75,10 @@ $("#youtube").click(function(e){
     window.open("https://www.youtube.com/channel/UCaJ4cE6PU3BR9Q6Jg1ygScA/featured?disable_polymer=1", "_blank");
 });
 
-// opening ceremony
-$("#opening").click(function(e){
+// closing ceremony
+$("#closing").click(function(e){
     e.preventDefault();
-    window.open("https://docs.google.com/presentation/d/1DoEZS16J332tov5lJgrxZaMjiGb2fJhlcNy0c2pWGwQ/edit", "_blank");
+    window.open("https://docs.google.com/presentation/d/1c-UlUuVOSqTN89w7SDki-Ekj7t6TyOI_srRz05jBvOc/edit?usp=sharing", "_blank");
 });
 
 //
