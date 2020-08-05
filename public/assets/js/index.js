@@ -52,10 +52,10 @@ $("#rubric").click(function(e){
 });
 
 // sign up
-$("#signUp").click(function(e){
-    e.preventDefault();
-    window.open("https://bytehacks1.typeform.com/to/WhoxyB", "_blank");
-});
+// $("#signUp").click(function(e){
+//     e.preventDefault();
+//     window.open("https://bytehacks1.typeform.com/to/WhoxyB", "_blank");
+// });
 
 // devpost
 $("#devpost").click(function(e){
