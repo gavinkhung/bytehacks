@@ -1,128 +1,138 @@
 body {
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    color: black;
-    font-family: 'Josefin Sans', sans-serif;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-family: 'Josefin Sans', sans-serif;
 }
 .box {
-    height: 100vh;
-    width: 100vw;
-    overflow: scroll;
-    overflow-x: hidden;
+  height: 100vh;
+  width: 100vw;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 .paper {
-    min-height: 90vh;
-    margin-left: 2.5vw;
-    margin-right: 2.5vw;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-    opacity: 0;
-    transition: all 0.5s ease-out;
-    background-size: cover;
+  min-height: 90vh;
+  margin-left: 2.5vw;
+  margin-right: 2.5vw;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  opacity: 0;
+  transition: all 0.5s ease-out;
+  background-size: cover;
 }
 .fade-in {
-    opacity: 1;
-    background-image: url("../imgs/vectors/who.svg");
+  opacity: 1;
+  background-image: url('../imgs/vectors/who.svg');
 }
 form {
-    display: flex;
-    flex-direction: column;
-    padding-left: 25%;
-    padding-right: 25%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 25%;
+  padding-right: 25%;
 }
 textarea {
-    resize:none;
-    width: 100%;
+  resize: none;
+  width: 100%;
 }
-p, a {
-    font-size: 1.25em;
-    color: black;
-    font-weight: 300;
+p,
+a {
+  font-size: 1.25em;
+  color: black;
+  font-weight: 300;
 }
 button {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 button a {
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 300;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
 }
 input {
-    width: 100%;
+  width: 100%;
 }
 #banner {
-    background-image: url("../imgs/vectors/banner.svg");
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 8vh;
+  background-image: url('../imgs/vectors/banner.svg');
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 8vh;
 }
 #recap {
-    background-image: url("../imgs/vectors/recap.svg");
+  background-image: url('../imgs/vectors/recap.svg');
 }
 #who {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #faq {
-    background-image: url("../imgs/vectors/faq.svg");
+  background-image: url('../imgs/vectors/faq.svg');
 }
 #schedule {
-    background-image: url("../imgs/vectors/schedule.svg");
+  background-image: url('../imgs/vectors/schedule.svg');
 }
 #contact {
-    background-image: url("../imgs/vectors/contact.svg");
+  background-image: url('../imgs/vectors/contact.svg');
 }
 #awards {
-    background-image: url("../imgs/vectors/awards.svg");
+  background-image: url('../imgs/vectors/awards.svg');
 }
 #sponsors {
-    background-image: url("../imgs/vectors/sponsors.svg");
+  background-image: url('../imgs/vectors/sponsors.svg');
 }
 #meet {
-    background-image: url("../imgs/vectors/meet.svg");
+  background-image: url('../imgs/vectors/meet.svg');
 }
 #contact {
-    background-image: url("../imgs/vectors/contact.svg");
+  background-image: url('../imgs/vectors/contact.svg');
 }
 .message {
-    height: 10%;
+  height: 10%;
 }
 .centered {
-    text-align: center;
+  text-align: center;
 }
-h1, h2 {
-    font-weight: 700;
+h1,
+h2 {
+  font-weight: 700;
 }
 h3 {
-    color: #5669ae;
+  color: #5669ae;
 }
-h1, h2, h3, h4, h5 {
-    font-family: 'Josefin Sans', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Josefin Sans', sans-serif;
 }
-h3, h4, h5 {
-    font-weight: 400;
+h3,
+h4,
+h5 {
+  font-weight: 400;
 }
 p a {
-    color: #59b0a2;
-    text-decoration: underline;
+  color: #59b0a2;
+  text-decoration: underline;
 }
-#prospectus_image img, #rubric_image img, #recap_pdf_image img {
-    width: 100%;
-    height: 100%;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
+#prospectus_image img,
+#rubric_image img,
+#recap_pdf_image img {
+  width: 100%;
+  height: 100%;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
 }
 .column img {
-    max-width: 100%;
+  max-width: 100%;
 }
 .email {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 .dir-h {
-    display: flex;
-    direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+  display: flex;
+  direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
